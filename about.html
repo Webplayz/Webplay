@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>This is game website</h1>
-    <p>This is a simple HTML page.</p>
+  <h1>Guess the Number Game</h1>
+  <p>Guess a number between 1 and 100:</p>
+  <input type="number" id="guessInput">
+  <button onclick="checkGuess()">Submit Guess</button>
+  <p id="message"></p>
+
+  <script>
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0;
+
+function checkGuess() {
+  const guess = parseInt(document.getElementById('guessInput').value);
+  attempts++;
+  
+  if (guess === randomNumber) {
+    document.getElementById('message').innerHTML = `Congratulations! You guessed the number ${randomNumber} in ${attempts} attempts.`;
+    document.getElementById('message').style.color = 'green';
+  } else if (guess < randomNumber) {
+    document.getElementById('message').innerHTML = 'Try a higher number.';
+    document.getElementById('message').style.color = 'red';
+  } else {
+    document.getElementById('message').innerHTML = 'Try a lower number.';
+    document.getElementById('message').style.color = 'red';
+  }
+}
+
+  </script>
 </body>
 </html>
+
