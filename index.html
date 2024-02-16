@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <style>
-        #first {
-    background-color: lightblue;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    border: 1px solid black;
-}
+    <title>play games</title>
+<style>
+  /* Define keyframe animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-    </style>
+  /* Apply animation to heading */
+  #first {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+</style>
 </head>
 <body>
-    <div id="first">This is a simple HTML page.</div>
+    <div id="first">Web Gamez</div>
     <a href="/games/Tic-tac-toe.html">Tic tac Toe</a>
 </body>
 </html>
