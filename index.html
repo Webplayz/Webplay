@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>play games</title>
 <style>
-  /* Define keyframe animation */
-  @keyframes slideIn {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+  /* The animation code */
+@keyframes colorChange {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
 
-  /* Apply animation to heading */
-  #first {
-    animation: slideIn 0.5s ease-out forwards;
-  }
+/* The element to apply the animation to */
+#first {
+  width: 100px;
+  height: 100px;
+  background-color: black; /* Added a background color to better visualize the text color change */
+  color: red; /* Initial text color */
+  animation-name: colorChange;
+  animation-duration: 4s;
+}
+
 </style>
 </head>
 <body>
+    <br>
     <div id="first">Web Gamez</div>
+    <br>
+    <br>
     <a href="/games/Tic-tac-toe.html">Tic tac Toe</a>
 </body>
 </html>
