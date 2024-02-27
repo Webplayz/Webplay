@@ -3,48 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>play games</title>
-<style>
-  /* The animation code */
-@keyframes colorChange {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: blue;}
-  100% {color: green;}
-}
-#first {
-  color: red;
-  font-size: 40px;
-  justify-content: center;
-  animation-name: colorChange;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+    <title>Play free games</title>
+    <style>
+        /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100℅;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
-</style>
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.game h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.game p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
 </head>
 <body>
-    <br>
-    <div id="first">Web Gamez</div>
-    <br>
-    <br>
-    <a class="button" href="/games/Tic-tac-toe.html">Tic tac Toe</a>
-    <br>
-    <a class="button" href="/games/Box.html">Flying box</a>
-   
+    <header>
+        <h1>Welcome to Webplayz!</h1>
+    </header>
+    <main>
+        <section class="category">
+            <h2>Dive into Adventure:</h2>
+            <div class="game">
+                <a href="games/game">
+                    <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                </a>
+                <h3>Knife hit</h3>
+                <p>A adventutous game with lot of fun.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Ready to embark on your gaming journey? Start playing now!</p>
+    </footer>
 </body>
 </html>
