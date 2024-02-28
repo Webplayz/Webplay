@@ -39,6 +39,12 @@ main {
 
 .category {
     margin-bottom: 40px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.category .game:last-child {
+    margin-right: 0;
 }
 
 .category h2 {
@@ -49,11 +55,12 @@ main {
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 200px;
+    width: calc(50% - 10px);
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
 }
 
 .game img {
