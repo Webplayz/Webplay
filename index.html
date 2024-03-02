@@ -50,12 +50,15 @@ main {
 
 .game {
     text-align: center;
-    background-color: #fff;
-    border-radius: auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.game img {
+.game-icon {
+    width: 80px; /* Example width for game icon */
+    height: 80px; /* Example height for game icon */
+    margin: 0 auto; /* Center the icon horizontally */
+}
+
+.game-icon img {
     width: 100%;
     height: auto;
     border-top-left-radius: 4px;
@@ -71,16 +74,6 @@ main {
 .game h3 {
     margin: auto 0;
     font-size: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-decoration: none;
-}
-
-.game p {
-    font-size: 8px;
-    color: #666;
-    margin-bottom: auto;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -104,27 +97,32 @@ footer {
         <section class="category">
             <h2>Dive into Adventure:</h2>
             <div class="games-grid">
-                <a href="game.html">
-                    <div class="game">
-                    <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
-                        <h3>Knife hit</h3>
-                        <p>contain ads.</p>
-                    </div>
-                </a>
-                <a href="rampage-racer.html">
-                    <div class="game">
-                    <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                <div class="game">
+                    <a href="game.html">
+                        <div class="game-icon">
+                            <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                        </div>
+                    </a>
+                       <h3>Knife hit</h3>
+                </div>
+
+                <div class="game">
+                    <a href="rampage-racer.html">
+                        <div class="game-icon">
+                            <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                        </div>
+                    </a>
                         <h3>Rampage racer</h3>
-                        <p>contain ads.</p>
-                    </div>
-                </a>
-                <a href="om-nom-run.html">
-                    <div class="game">
-                    <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                </div>
+
+                <div class="game">
+                     <a href="om-nom-run.html">
+                         <div class="game-icon">
+                             <img src="https://img.freepik.com/free-vector/play-vibrant-gradient-typography_53876-93868.jpg?w=1060&t=st=1709015830~exp=1709016430~hmac=b0facf617fa6dc41401f051bd4513b52a448c3514809a87c2e03a009239f64f5" alt="KNIFE HIT">
+                         </div>
+                    </a>
                         <h3>Om Nom Run</h3>
-                        <p>A adventutous runner game.</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
     </main>
